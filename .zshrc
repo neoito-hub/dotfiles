@@ -71,4 +71,4 @@ bindkey '^n' history-search-forward
 bindkey ' '  magic-space
 
 # Load user specific configs
-[ -f $HOME/.zshrc.mystuff ] && . $HOME/.zshrc.mystuff
+[[ -a $HOME/.zshrc.mystuff ]] && . $HOME/.zshrc.mystuff
