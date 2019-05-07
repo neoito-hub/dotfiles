@@ -14,6 +14,7 @@ mkdir -p $HOME/.vim/files/backup
 mkdir -p $HOME/.vim/files/swap
 mkdir -p $HOME/.vim/files/undo
 mkdir -p $HOME/.vim/files/info/viminfo
+touch $HOME/.zshrc.mystuff.zsh
 
 # check if we have the repo already cloned
 # do a pull if present
