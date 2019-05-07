@@ -30,11 +30,12 @@ function gg() { git commit -m "$*" }
 # More suitable for .zshenv
 EDITOR=vim
 # prompt
+setopt PROMPT_SUBST
 export GIT_PS1_SHOWDIRTYSTATE=yes
 export GIT_PS1_SHOWUNTRACKEDFILES=yes
 export GIT_PS1_STATESEPARATOR=''
 source ~/.dotfiles/git-prompt.sh
-PROMPT='%n@%m %3~$(__git_ps1 " (%s)")%(!.#.$)%(?.. [%?]) '
+PS1='%n@%m %3~$(__git_ps1 " (%s)")%(!.#.$)%(?.. [%?]) '
 
 # History settings
 HISTFILE=~/.history-zsh
