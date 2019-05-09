@@ -35,7 +35,8 @@ for f in $CONF_FILES; do
 	(cd ~/; ln -s .dotfiles/$f $f)
 done
 
-echo "-> Installing vscode plugins"
+echo "-> Installing vscode config and plugins"
+cp ~/.dotfiles/settings.json $HOME/.config/Code/User/settings.json
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension esbenp.prettier-vscode
 
