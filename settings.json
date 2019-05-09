@@ -1,0 +1,26 @@
+{
+  "editor.tabSize": 2,
+  "editor.rulers": [
+      80,
+      100
+  ],
+  "window.title": "${activeEditorMedium}${separator}${rootName}",
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.fontSize": 16,
+  "editor.fontFamily": "'Monospace'",
+  "editor.formatOnSave": false,
+  "terminal.integrated.fontSize": 12,
+  "[javascript]": { "editor.formatOnSave": true },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "node_modules": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/*/**": true
+  },
+  "workbench.editor.showTabs": true
+}
