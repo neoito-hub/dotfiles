@@ -12,6 +12,8 @@ $ sudo apt install zsh
 $ chsh -s $(which zsh)
 ```
 
+- Install [vscode](https://code.visualstudio.com/docs/setup/linux#_debian-and-ubuntu-based-distributions). This is important, as the script will install a few vscode plugins.
+
 ## Install
 
 ### via wget
