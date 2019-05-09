@@ -28,9 +28,16 @@ else
 	git clone --recursive https://github.com/neoito-hub/dotfiles ~/.dotfiles
 fi
 
-echo "-> Installing"
+echo "-> Installing dotfiles"
 cd ~/.dotfiles
 for f in $CONF_FILES; do
 	rm -f ~/$f
 	(cd ~/; ln -s .dotfiles/$f $f)
 done
+
+echo "-> Installing vscode plugins"
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension esbenp.prettier-vscode
+
+echo "-> All done."
+exit 0
